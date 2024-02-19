@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    height: 100vh;
+    width: 30%;
+    float: left;
+    background-color: yellow;
+}
+
+#content {
+    margin-left: 30%;
+    padding: 20px;
+}
