@@ -1,0 +1,34 @@
+body{
+    background-color: #1f1f1f;
+}
+
+.ship,
+.cell {
+    height: 50px;
+    width: 50px;
+}
+
+.battlefield{
+    width: 100%;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell{
+    background-color:bisque;
+}
+
+.ship{
+    background-color:chocolate;
+}
+
+.cell:hover{
+    background-color: burlywood;
+}
+
+.ship:hover{
+    background-color: brown;
+}
