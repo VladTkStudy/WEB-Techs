@@ -3,48 +3,46 @@ body {
     padding: 0;
 }
 
-#topBlueElement {
-    background-color: #15aff0;
-    height: 10vh;
-    width: 90%;
+.outerFlexContainer {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-#bottomBlueElement {
-    background-color: #15aff0;
-    height: 10vh;
-    width: 80%;
-    margin-left: 10%;
-    position: absolute;
-    bottom: 0;
+.innerFlexContainer {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#leftYellowElement {
+.blueElement {
+    background-color: #15aff0;
+    height: 10vh;
+    width: 80vw;
+}
+
+.yellowElement {
     background-color: rgb(255, 207, 17);
     height: 100vh;
-    width: 10%;
-    float: left;
+    width: 10vw;
 }
 
-#content {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10vh;
-    padding: 20px;
+.content {
+    padding: 20%;
 }
 
-#leftYellowElement:hover {
+.yellowElement:hover {
     background-color: chocolate;
 }
 
-#bottomBlueElement:hover {
-    background-color: aqua;
-}
-
-#topBlueElement:hover {
+.blueElement:hover {
     background-color: aqua;
 }
 
 span.highlight {
     color: rgb(14, 209, 183);
-  }
-  
+}
