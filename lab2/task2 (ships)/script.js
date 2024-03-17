@@ -6,7 +6,7 @@ const positions =
         [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
         [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
         [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
         [1, 0, 1, 0, 0, 1, 0, 0, 0, 0],
         [1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
         [0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
@@ -19,7 +19,7 @@ function createBattlefield() {
     for (i = 0; i < 10; i++) {
         const row = table.insertRow(i);
         for (j = 0; j < 10; j++) {
-            createCalendarElement(row, positions[i][j] == 0 ? cellClass : shipClass);
+            createCalendarElement(row, !positions[i][j] ? cellClass : shipClass);
         }
     }
 }

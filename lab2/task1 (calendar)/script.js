@@ -4,23 +4,22 @@ const dayNameClass = "dayNameElement";
 const workDayClass = "workDayElement";
 const weekendClass = "weekendElement";
 
-const daysCount = 31;
+const daysCount = 26;
 
 function createCalendar() {
-    let counter = 1;
-    for(i = 0; i < 6; i++)
-    {
+    let counter = 10;
+    for (i = 0; i < 6; i++) {
         const row = table.insertRow(i);
 
-        for(j = 0; j < 7; j++)
-        {
-            if(i == 0) {
+        for (j = 0; j < 7; j++) {
+            if (i == 0) {
                 createCalendarElement(row, dayNameClass, days[j]);
                 continue;
             }
 
-            if(counter > daysCount)
+            if (counter > daysCount) {
                 break;
+            }
 
             createCalendarElement(row, j < 5 ? workDayClass : weekendClass, counter);
             counter++;
